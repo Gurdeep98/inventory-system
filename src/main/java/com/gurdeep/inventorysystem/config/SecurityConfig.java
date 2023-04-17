@@ -14,7 +14,6 @@ public class SecurityConfig {
                 .requestMatchers("/app/item/**").authenticated()
                 .and().cors()
                 .and().oauth2ResourceServer().jwt();
-
         return http.build();
     }
 
